@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy New Year 2026, Nini 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Nunito',sans-serif;
+  background:linear-gradient(180deg,#12001f,#2b003f,#12001f);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* floating sparkles */
+.sparkle{
+  position:fixed;
+  width:6px;
+  height:6px;
+  background:#fff;
+  border-radius:50%;
+  opacity:.6;
+  animation:sparkle 6s linear infinite;
+}
+@keyframes sparkle{
+  0%{transform:translateY(0);opacity:0}
+  20%{opacity:1}
+  100%{transform:translateY(-120vh);opacity:0}
+}
+
+/* floating hearts */
+.heart{
+  position:fixed;
+  bottom:-10px;
+  font-size:20px;
+  animation:float 8s linear infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0) scale(1);opacity:0}
+  20%{opacity:1}
+  100%{transform:translateY(-120vh) scale(1.4);opacity:0}
+}
+
+/* sections */
+section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+/* title */
+.name{
+  font-family:'Pacifico',cursive;
+  font-size:3.2rem;
+  color:#ffb6ff;
+}
+.name span{
+  display:inline-block;
+  animation:glow 2s infinite;
+}
+.name span:nth-child(n){
+  animation-delay:calc(var(--i) * .25s);
+}
+@keyframes glow{
+  0%{opacity:.4}
+  50%{opacity:1;text-shadow:0 0 25px #ff7bff}
+  100%{opacity:.4}
+}
+
+.subtitle{
+  margin-top:15px;
+  font-size:1.2rem;
+  color:#ffdfff;
+}
+
+/* card */
+.card{
+  margin-top:30px;
+  background:rgba(255,255,255,.08);
+  padding:25px;
+  border-radius:25px;
+  box-shadow:0 0 30px rgba(255,0,255,.25);
+}
+
+/* poem text */
+.poem{
+  font-size:1.05rem;
+  line-height:1.9;
+  color:#ffeaff;
+}
+
+/* cute divider */
+.divider{
+  font-size:2rem;
+  margin:30px 0;
+}
+
+/* secret */
+.secret{
+  margin-top:25px;
+  padding:20px;
+  border:2px dashed #ffb6ff;
+  border-radius:20px;
+  cursor:pointer;
+}
+.secret span{
+  display:none;
+  margin-top:15px;
+  color:#ffd6ff;
+}
+
+/* big heart */
+.big-heart{
+  font-size:5rem;
+  animation:beat 1.4s infinite;
+  color:#ff5cff;
+}
+@keyframes beat{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.2)}
+  100%{transform:scale(1)}
+}
+
+/* footer */
+footer{
+  padding:40px 20px;
+  font-size:.9rem;
+  color:#dcbfff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAME -->
+<section>
+  <div class="name">
+    <span style="--i:1">N</span>
+    <span style="--i:2">i</span>
+    <span style="--i:3">n</span>
+    <span style="--i:4">i</span>
+  </div>
+  <div class="subtitle">Happy New Year 2026, my softest love 💖</div>
+
+  <div class="card poem">
+    If this page had a heartbeat,  
+    it would beat your name…  
+    softly, slowly, endlessly.  
+    <br><br>
+    Even through distance,  
+    even through screens,  
+    my love always finds you 💌
+  </div>
+</section>
+
+<!-- POEM -->
+<section>
+  <div class="card poem">
+    🌙 <b>A Little Poem for You</b> 🌙  
+    <br><br>
+    You are the calm in my chaos,  
+    the smile I wait for every day.  
+    <br>
+    You are the warmth in my nights,  
+    the reason my heart feels safe.  
+    <br><br>
+    If love had a language,  
+    it would sound like your name.  
+    If forever had a face,  
+    it would look like you 💖
+  </div>
+</section>
+
+<!-- CUTE MESSAGES -->
+<section>
+  <div class="card poem">
+    🧸 <b>Things I Love About You</b> 🧸  
+    <br><br>
+    I love how cute you are without trying.  
+    I love how your words feel like hugs.  
+    I love how your presence makes distance disappear.  
+    <br><br>
+    You are soft magic.  
+    You are gentle love.  
+    You are my favorite feeling 🐰✨
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section>
+  <div class="card poem">
+    💍 <b>My Promise</b> 💍  
+    <br><br>
+    In 2026…  
+    I promise patience.  
+    I promise loyalty.  
+    I promise choosing you again and again.  
+    <br><br>
+    No matter how far,  
+    my heart will always walk toward you 💕
+    <div class="divider">🐱🐻🐰✨</div>
+  </div>
+</section>
+
+<!-- SECRET -->
+<section>
+  <div class="card">
+    <div class="secret" onclick="reveal()">
+      💌 Tap gently… there’s something only for you 💌
+      <span id="secretText">
+        Nini…  
+        I don’t just love you.  
+        I feel safe with you.  
+        <br><br>
+        I want you in my tomorrows,  
+        my boring days,  
+        my happiest moments,  
+        and my quiet nights.  
+        <br><br>
+        You are not temporary.  
+        You are forever ♾️💖
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- END -->
+<section>
+  <div class="big-heart">❤️</div>
+  <p class="poem" style="margin-top:20px">
+    Happy New Year 2026, my love.  
+    Thank you for existing.  
+    Thank you for being mine 💕
+  </p>
+</section>
+
+<footer>
+  Made with all my heart 💖  
+  From me, always — just for you, Nini
+</footer>
+
+<script>
+// sparkles
+for(let i=0;i<40;i++){
+  let s=document.createElement("div");
+  s.className="sparkle";
+  s.style.left=Math.random()*100+"vw";
+  s.style.top=100+Math.random()*100+"vh";
+  s.style.animationDuration=4+Math.random()*6+"s";
+  document.body.appendChild(s);
+}
+
+// hearts
+function heart(){
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML=["❤️","💖","💕","✨","🐰"][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+"vw";
+  h.style.animationDuration=6+Math.random()*6+"s";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),10000);
+}
+setInterval(heart,600);
+
+// secret
+function reveal(){
+  document.getElementById("secretText").style.display="block";
+}
+</script>
+
+</body>
+</html>
